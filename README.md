@@ -9,4 +9,6 @@
   6. Random forest, lowest auc score is 92 for 5 labels in genre. 
 
 
+## Exercise 2. NLP with Python: Spam detection.
 
+[dd][NLP_exercise_scam_detector/NLP_exercise_scam_detector.ipynb]
