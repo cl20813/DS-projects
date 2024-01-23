@@ -11,4 +11,5 @@
 
 ## Exercise 2. NLP with Python: Spam detection.
 
-[dd][NLP_exercise_scam_detector/NLP_exercise_scam_detector.ipynb]
+ -[Note Link](NLP_exercise_scam_detector/NLP_exercise_scam_detector.ipynb)
+
