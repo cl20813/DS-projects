@@ -31,7 +31,7 @@ conda activate ds_projects
 # Initialize Conda
 eval "$(conda shell.bash hook)"        # Initialize Conda for SLURM environment
 conda activate ds_projects             # Activate Conda environment
-
+echo "Current date and time: $(date)"
 # Run the Python script
 
 srun python /home/jl2815/ds_projects/travelers/parameter_optimization.py 
