@@ -29,8 +29,8 @@ module load anaconda/2024.06-ts840
 conda activate ds_projects 
 
 # Initialize Conda
-eval "$(conda shell.bash hook)"                           # Initialize Conda for SLURM environment
-echo "Current date and time: $(date)"
+eval "$(conda shell.bash hook)"        # Initialize Conda for SLURM environment
+conda activate ds_projects             # Activate Conda environment
 
 # Run the Python script
 
