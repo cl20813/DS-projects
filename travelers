@@ -26,6 +26,7 @@ nano travelers_1.sh                # open a new text editor
 module purge                                              
 module use /projects/community/modulefiles                 
 module load anaconda/2024.06-ts840 
+conda activate ds_projects 
 
 # Initialize Conda
 eval "$(conda shell.bash hook)"                           # Initialize Conda for SLURM environment
@@ -41,3 +42,30 @@ sbatch travelers_1.sh
 ##################################################################################################
 ##################################################################################################
 
+<Make environment>
+module use /projects/community/modulefiles
+module avail 
+module load anaconda/2024.06-ts840
+conda init bash ##configure your bash shell for conda, auto update your .bashrc file
+
+''' You may skip this part.
+conda init bash adds necessary configuration code to your .bashrc. This configuration ensures that the conda command and Conda environments are available every time you open a new terminal session in the bash shell.
+Bash shell is a command-line interpret or shell used in many Unix-like operating systems. It allows useres to interact with the operating system by typing commands.
+Command Prompt in Windows is command-line interface(CLI) for Windows, bash is primarily used in Unix-like systems such as Linux and macOS.
+'''
+
+cd 
+source .bashrc  # this command is used to reload the .bashrc file
+mkdir -p .conda/pkgs/cache .conda/envs ## This is the folder to store your own enviornment you going to build.
+conda create --name ds_projects tensorflow==2.3 python=3.8 # (/home//.conda/envs/tf2)
+
+conda activate ds_projects 
+conda install conda=24.9.1 # upgrade the latest version of conda. conda install numpy pandas matplotlib seaborn scikit-learn
+conda install pandas numpy matplotlib scipy lightgbm scikit-learn
+
+pip install lightgbm # conda doesn't seem to work
+# verify installation 
+
+pip list | grep 'lightgbm\|scikit-learn' || echo "Modules not found in pip list."  #grep is not for window
+python -c "import lightgbm; print('lightgbm imported successfully')" || echo "Failed to import lightgbm."
+python -c "import sklearn; print('scikit-learn imported successfully')" || echo "Failed to import scikit-learn."
