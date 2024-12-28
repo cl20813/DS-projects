@@ -10,7 +10,7 @@ response y: 'convert_id' takes 0 or 1, where 1 indicates that a policy holder wi
 -[LightGBM jupyter notebook](set_environment)            
 -[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)      
 
-CNN performance is no better than random predictions with AUC score nearly 0.5 but Tabnet is slightly better. This is because CNN is more suitable for spatial, sequential data
+CNN performance is no better than random predictions with AUC score nearly 0.5 but Tabnet is better with AUC score over 0.6. This is because CNN is more suitable for spatial, sequential data
 rather than tabular, well structured data. 
 
 -[Neural Network (CNN) and Tabnet](trav/trav_neural_network.ipynb)           
