@@ -1,5 +1,6 @@
 # DS-projects
 
+ -[Set Environment](set_environment)
 
 ## Exercise 1: Spotify genre classification using random forest.
   1. Remove duplicated rows, columns with high-entropy features.
