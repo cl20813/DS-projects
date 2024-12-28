@@ -12,11 +12,11 @@ nano travelers_1.sh                # open a new text editor
 
 '''
 #!/bin/bash
-#SBATCH --job-name=travelers_1       # Job name
+#SBATCH --job-name=trav_lgbm_1       # Job name
 
 #SBATCH --output=/home/jl2815/ds_projects/travelers/lightgbm_1_%j.out        # Standard output file (%j = JobID)
 #SBATCH --error=/home/jl2815/ds_projects/travelers/lightgbm_1_%j.err         # Standard error file (%j = JobID)
-#SBATCH --time=24:00:00                
+#SBATCH --time=48:00:00                
 #SBATCH --ntasks=1                       
 #SBATCH --cpus-per-task=40                 
 #SBATCH --mem=200G                          
