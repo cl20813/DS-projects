@@ -5,9 +5,13 @@
 ## Exercise : Travelers Insurance Company Binary Classification Problem
 response y: 'convert_id' takes 0 or 1, where 1 indicates that a policy holder will change his insurer from Travelers to another company. 
 
--[Feature Engineering](set_environment)        
--[LightGBM](set_environment)          
+-[Feature Engineering](set_environment)      
+
+-[LightGBM jupyter notebook](set_environment)            
+-[LightGBM hyper parameter optimization through Rutgers HPC](travelers)      
+
 -[Neural Network (CNN)](set_environment)       
+
 -[Xgboost](set_environment)             
 
 
