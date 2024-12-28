@@ -8,7 +8,7 @@ response y: 'convert_id' takes 0 or 1, where 1 indicates that a policy holder wi
 -[Feature Engineering](set_environment)      
 
 -[LightGBM jupyter notebook](set_environment)            
--[LightGBM hyper parameter optimization through Rutgers HPC](travelers)      
+-[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)      
 
 -[Neural Network (CNN)](set_environment)       
 
