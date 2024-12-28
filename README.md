@@ -7,7 +7,8 @@ response y: 'convert_id' takes 0 or 1, where 1 indicates that a policy holder wi
 
 -[Feature Engineering](trav/data_engineering.ipynb)      
 
--[LightGBM jupyter notebook](set_environment)            
+Current AUC score is 0.6393 using the LightGBM. The data is imbalanced, but I think there is a room for improvement.  
+-[LightGBM jupyter notebook](trav/travelers.ipynb)            
 -[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)      
 
 CNN performance is no better than random predictions with AUC score nearly 0.5 but Tabnet is better with AUC score over 0.6. This is because CNN is more suitable for spatial, sequential data
