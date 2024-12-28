@@ -1,0 +1,40 @@
+### Copy python from my computer to HPC
+
+scp "C:\\Users\\joonw\\trav\\trav_dataset1.csv" jl2815@amarel.rutgers.edu:/home/jl2815/ds_projects/travelers
+
+scp "C:\\Users\\joonw\\trav\\nn_parameter_opt.py" jl2815@amarel.rutgers.edu:/home/jl2815/ds_projects/travelers
+
+### Copy python from Amarel HPC to my computer
+scp jl2815@amarel.rutgers.edu:/home/jl2815/ds_projects/travelers/nn_parameter_opt.py "C:\\Users\\joonw\\trav"
+
+
+nano travelers_nn1.sh                # open a new text editor
+
+'''
+#!/bin/bash
+#SBATCH --job-name=travelers_nn1       # Job name
+
+#SBATCH --output=/home/jl2815/ds_projects/travelers/lightgbm_1_%j.out        # Standard output file (%j = JobID)
+#SBATCH --error=/home/jl2815/ds_projects/travelers/lightgbm_1_%j.err         # Standard error file (%j = JobID)
+#SBATCH --time=24:00:00                
+#SBATCH --ntasks=1                       
+#SBATCH --cpus-per-task=40                 
+#SBATCH --mem=200G                          
+#SBATCH --partition=mem                     
+
+# Load the Anaconda module to use srun 
+module purge                                              
+module use /projects/community/modulefiles                 
+module load anaconda/2024.06-ts840 
+conda activate ds_projects 
+
+# Initialize Conda
+eval "$(conda shell.bash hook)"        # Initialize Conda for SLURM environment
+conda activate ds_projects             # Activate Conda environment
+echo "Current date and time: $(date)"
+# Run the Python script
+
+srun python /home/jl2815/ds_projects/travelers/nn_parameter_opt.py 
+```
+
+sbatch travelers_nn1.sh   
