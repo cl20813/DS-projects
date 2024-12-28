@@ -7,7 +7,12 @@ response y: 'convert_id' takes 0 or 1, where 1 indicates that a policy holder wi
 
 -[Feature Engineering](trav/data_engineering.ipynb)      
 
-Current AUC score is 0.6393 using the LightGBM. The data is imbalanced, but I think there is a room for improvement.  
+Current AUC score is 0.6393 using the LightGBM. The data is imbalanced, but I think there is a room for improvement. 
+1. Base modeling   
+2. Optimizing hyper parameter by using Rutgers HPC computing resources.   
+3. Do the feature engineering again.   
+4. Re-tune the hyper parameters.   
+
 -[LightGBM jupyter notebook](trav/travelers.ipynb)            
 -[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)      
 
