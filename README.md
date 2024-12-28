@@ -2,6 +2,14 @@
 
  -[Set Environment](set_environment)
 
+## Exercise : Travelers Insurance Company Binary Classification Problem
+response y: 'convert_id' takes 0 or 1, where 1 indicates that a policy holder will change his insurer from Travelers to another company. 
+-[Feature Engineering](set_environment)        
+-[LightGBM](set_environment)          
+-[Neural Network (CNN)](set_environment)       
+-[Xgboost](set_environment)             
+
+
 ## Exercise 1: Spotify genre classification using random forest.
   1. Remove duplicated rows, columns with high-entropy features.
   2. Missing values: use mean for continous and mode for categorical features.
