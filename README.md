@@ -2,8 +2,8 @@
 
  -[Make New Environment in Rutgers Amarel HPC ](set_environment)
 
-## Exercise : Travelers Insurance Company Binary Classification Problem
-response y: 'convert_id' takes 0 or 1, where 1 indicates that a policy holder will change his insurer from Travelers to another company. 
+## Exercise : Travelers Insurance Conversion Modeling
+response y: 'convert_id' takes 0 or 1, where 1 indicates that a prospect consumer will choose Travelers as their insurer.
 
 -[Feature Engineering](trav/data_engineering.ipynb)      
 
