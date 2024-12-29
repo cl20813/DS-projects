@@ -3,26 +3,24 @@
  -[Make New Environment in Rutgers Amarel HPC ](set_environment)
 
 ## Exercise : Travelers Insurance Conversion Modeling
-response y: 'convert_id' takes 0 or 1, where 1 indicates that a prospect consumer will choose Travelers as their insurer.
+The goal of the project is to predict the probability that a prospect consumer will choose Travelers as their insurer.
 
 -[Feature Engineering](trav/data_engineering_lightgbm.ipynb)      
 
-Current AUC score is 0.6393 using the LightGBM. The data is imbalanced, but I think there is a room for improvement. 
-1. Base modeling   
-2. Optimizing hyper parameter by using Rutgers HPC computing resources.   
-3. Do the feature engineering again.   
-4. Re-tune the hyper parameters.   
+Last AUC score is 0.8015 using the LightGBM.(12-28-2024)
 
--[LightGBM jupyter notebook](trav/travelers.ipynb)            
+1. Base modeling to compare basic models: CNN, LightGBM and linear models.
+2. Do the feature engineering.
+3. Optimizing hyper parameter by using Rutgers HPC computing resources.   
+4. Do the feature engineering again.   
+5. Re-tune the hyper parameters.
+
+-[LightGBM jupyter notebook](trav/travelers_lightgbm.ipynb)            
 -[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)      
-
-CNN performance is no better than random predictions with AUC score nearly 0.5 but Tabnet is better with AUC score over 0.6. This is because CNN is more suitable for spatial, sequential data
-rather than tabular, well structured data. 
 
 -[Neural Network (CNN) and Tabnet](trav/trav_neural_network.ipynb)           
 -[Deep Learning nn model hyper parameter optimization through Rutgers HPC](trav/amarel/nn_param_opt)          
-
--[Xgboost](set_environment)             
+            
 
 
 ## Exercise 1: Spotify genre classification using random forest.
