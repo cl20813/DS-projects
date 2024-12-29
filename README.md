@@ -5,16 +5,15 @@
 ## Exercise : Travelers Insurance Conversion Modeling
 The goal of the project is to predict the probability that a prospect consumer will choose Travelers as their insurer.
 
--[Feature Engineering](trav/data_engineering_lightgbm.ipynb)      
-
 Last AUC score is 0.8015 using the LightGBM.(12-28-2024)
 
 1. Base modeling to compare basic models: CNN, LightGBM and linear models.
-2. Do the feature engineering.
+2. Do the feature engineering. -[Feature Engineering](trav/data_engineering_lightgbm.ipynb)  
 3. Optimizing hyper parameter by using Rutgers HPC computing resources.   
 4. Do the feature engineering again.   
 5. Re-tune the hyper parameters.
 
+The final modeling result is shwon below.
 -[LightGBM jupyter notebook](trav/travelers_lightgbm.ipynb)            
 -[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)      
 
