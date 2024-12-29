@@ -5,7 +5,9 @@
 ## Exercise : Travelers Insurance Conversion Modeling (Update Dec.2024)
 The goal of the project is to predict the probability that a prospect consumer will choose Travelers as their insurer.
 
-Last AUC score is 0.8015 using the LightGBM.(12-28-2024). Tabnet showed good AUC score but it performed very poorly on predicting actual labels. Another observation is that, CNN is good for spatial, sequential data and not a good tool for analyzing tabular, well structured data.
+Last AUC score for probability prediction is 0.8015 and recall for convertors (class 1) is 0.77 using the LightGBM.(12-28-2024). 
+
+Tabnet showed good AUC score but it performed very poorly on predicting actual labels. Another observation is that, CNN is good for spatial, sequential data and not a good tool for analyzing tabular, well structured data.
 
 1. Perform base modeling to compare basic models: CNN, LightGBM, and linear models.
 2. Conduct feature engineering. -[Feature Engineering](trav/data_engineering_lightgbm.ipynb)  
