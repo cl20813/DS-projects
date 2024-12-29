@@ -13,12 +13,12 @@ Last AUC score is 0.8015 using the LightGBM.(12-28-2024)
 4. Do the feature engineering again.   
 5. Re-tune the hyper parameters.
 
-The final modeling result is shwon below.
--[LightGBM jupyter notebook](trav/travelers_lightgbm.ipynb)            
--[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)      
+The final modeling result is shwon below.                  
+-[Final model: LightGBM jupyter notebook](trav/travelers_lightgbm.ipynb)                             
+-[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)               
 
--[Neural Network (CNN) and Tabnet](trav/trav_neural_network.ipynb)           
--[Deep Learning nn model hyper parameter optimization through Rutgers HPC](trav/amarel/nn_param_opt)          
+-[Reference: Neural Network (CNN) and Tabnet](trav/trav_neural_network.ipynb)                     
+-[Deep Learning nn model hyper parameter optimization through Rutgers HPC](trav/amarel/nn_param_opt)                    
             
 
 
