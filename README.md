@@ -5,7 +5,7 @@
 ## Exercise : Travelers Insurance Conversion Modeling
 response y: 'convert_id' takes 0 or 1, where 1 indicates that a prospect consumer will choose Travelers as their insurer.
 
--[Feature Engineering](trav/data_engineering.ipynb)      
+-[Feature Engineering](trav/data_engineering_lightgbm.ipynb)      
 
 Current AUC score is 0.6393 using the LightGBM. The data is imbalanced, but I think there is a room for improvement. 
 1. Base modeling   
